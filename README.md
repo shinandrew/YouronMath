@@ -1,6 +1,11 @@
 # YouronMath
 
 This repository contains scripts used for the paper "Can A Gamer Train A Mathematical Reasoning Model?" that trains and evaluates a mathematical reasoning model on a single RTX 3080 Ti.  Models are available at https://huggingface.co/shinysup/YouronMath.
+```
+from transformers import AutoModelForCausalLM, AutoTokenizer
+model = AutoModelForCausalLM.from_pretrained("shinysup/YouronMath")
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Math-1.5B")
+```
 
 ## Files
 
